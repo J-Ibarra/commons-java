@@ -1,0 +1,17 @@
+package br.com.crypto.commons.zebra.helper;
+
+public enum ZebraBarCode {
+	
+	CODE39STD("3"),CODE39CHECKDIGIT("3C"),CODE93("9"),CODE128UCCAUTO("0"),CODE128A("1"),CODE128B("1A"),CODE128C("1C"),CODE128DEUTSCHECHECK("1D"),CODEBAR("K"),EAN8("E80"),EAN82DIGIT("E82"),EAN85DIGIT("E85"),EAN13("E30"),EAN132DIGIT("E32"),EAN135DIGIT("E35"),GERMANCODE("2G"),INTERLEAVED("2"),INTERLEAVEDCHECK("2C"),POSTNET("P"),PLANET("PL"),JAPANESE("J"),UCCEAN128("1E"),UPCA("UA0"),UPCA2DIGIT("UA2"),UPCA5DIGIT("UA5"),UPCE("UE0"),UPCE2DIGIT("UE2"),UPCE5DIGIT("UE5"),UPCINTERLEAVED("2U"),PLESSEY("L"),MSI3("M");
+	
+	String value;
+	
+	private ZebraBarCode(String value) {
+		this.value = value;
+	}
+	
+	public String getValue() {
+		return this.value;
+	}
+
+}
